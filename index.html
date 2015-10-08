@@ -13,9 +13,17 @@
 
       a { color: #414141; text-decoration: none; }
       a:hover { color: #75BA46; }
-      p.callout {padding:15px;background-color:#f5f5f5;margin-bottom: 15px;}
-      .callout a {font-weight:bold;color: #75BA46;}
-      .callout a:hover { color: #414141;}
+      hr { margin: 30px 15px; border: 0; border-bottom: 1px solid #dfdfdf;}
+
+
+      .agenda {padding:35px 15px 15px;background-color:#f5f5f5;margin-bottom: 15px; margin-top: -10px;}
+      .agenda p {margin-bottom: 25px;}
+      .agenda-data {color: #777; font-weight: 500; margin-bottom:5px;}
+      .agenda-descricao {color: #75BA46; font-weight: 500; margin-bottom: 5px;}
+      .agenda-detalhes {color: #777; font-weight: 500; font-size: .8rem;}
+
+
+
       .social .soc-btn {padding: 3px 7px;font-size:12px;margin-bottom:10px;text-decoration:none;color: #FFF;font-weight:bold;display:block;text-align:center;}
       a.fb { background-color: #3B5998!important; }
       a.tw { background-color: #1daced!important; }
@@ -44,7 +52,7 @@
       ul li {margin-left:5px;list-style-position: inside;}
 
       .articles { width:100%; position:relative; margin-top: 1rem;}
-      .article { width:48%; display:inline; position:relative; text-align: left; margin-bottom: 2rem; }
+      .article { width:48%; display:inline; position:relative; text-align: left; margin-bottom: 3rem; }
       .article:hover p { color: #75BA46; }
       .article--left { float: left; }
       .article--right { float: right; }
@@ -90,13 +98,13 @@
         <td></td>
         <td class="header container" align="">
 
-          <!-- /content -->
+
           <div class="content">
             <img src="http://assets.mktnaweb.com/accounts/2014/07/17/32646/pictures/40/original_logo.png?1442618972" style="position:absolute; top: 10px;"/ class="header--logo">
             <h6 class="collapse">
               R-Crio News<br/>
-              Setembro 2015</h6>
-          </div><!-- /content -->
+              Outubro 2015</h6>
+          </div>
 
         </td>
         <td></td>
@@ -104,22 +112,26 @@
     </table><!-- /HEADER -->
 
     <!-- BODY -->
-    <table class="body-wrap" bgcolor="">
+    <table class="body-wrap">
       <tr>
         <td></td>
         <td class="container" align="" bgcolor="#FFFFFF">
 
           <!-- Chamada em Destaque -->
           <div class="content">
-            <h3>Lorem ipsum dolor</h3>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <a href="#">Saiba mais &raquo;</a>
-            </p>
+            <a href="#">
+              <h3>Lorem ipsum dolor</h3>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </a>
           </div>
+
+          <hr>
 
           <!-- Outras chamadas -->
           <div class="content">
+            <h4>Novidades no Blog</h4>
             <div class="articles">
               <div class="article article--left">
                 <a href="#">
@@ -158,38 +170,59 @@
                 </a>
               </div>
             </div>
-          </div><!-- /content -->
+          </div>
 
-          <!-- content -->
-          <div class="content"><table bgcolor="">
-            <tr>
-              <td>
-                <!-- Callout Panel -->
-                <p class="callout">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <a href="#">Ir para o blog &raquo;</a>
-                </p>
-              </td>
-            </tr>
-          </table></div><!-- /content -->
-
-          <!-- content -->
           <div class="content">
-            <table bgcolor="">
+            <table>
+              <tr>
+                <td>
+                  <!-- Agenda Panel :begin -->
+                  <div class="agenda">
+                    <h4>Agenda do Mês</h4>
+                    <p>
+                      <div class="agenda-data">10/out</div>
+                      <a href="#">
+                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
+                      </a>
+                    </p>
+                    <p>
+                      <div class="agenda-data">15/out</div>
+                      <a href="#">
+                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
+                      </a>
+                    </p>
+                    <p>
+                      <div class="agenda-data">27/out</div>
+                      <a href="#">
+                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
+                      </a>
+                    </p>
+                  </div>
+                  <!-- Agenda Panel : end -->
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="content">
+            <table>
               <tr>
                 <td>
                   <!-- social & contact -->
-                  <table bgcolor="" class="social" width="100%">
+                  <table class="social" width="100%">
                     <tr>
                       <td>
                         <div class="column">
-                          <table bgcolor="" cellpadding="" align="left">
+                          <table cellpadding="" align="left">
                             <tr>
                               <td>
                                 <h5 class="">Curta, siga, compartilhe</h5>
                                 <p class="">
                                   <a href="https://www.facebook.com/rcriocriogenia" class="soc-btn fb" target="_blank">Facebook</a>
-                                  <a href="https://www.twitter.com/rcriocriogenia" class="soc-btn tw" target="_blank">Twitter</a>
-                                  <a href="https://www.linkedin.com/company/r-crio" class="soc-btn li" target="_blank">Linkedin</a>
                                   <a href="https://www.youtube.com/channel/UCjgvk9zu46Jlvk23c7nLfFA" class="soc-btn yt" target="_blank">Youtube</a>
                                 </p>
                               </td>
@@ -197,7 +230,7 @@
                           </table>
                         </div>
                         <div class="column">
-                          <table bgcolor="" cellpadding="" align="left">
+                          <table style="text-align: right;">
                             <tr>
                               <td>
                                 <h5 class="">Fale com a R-Crio</h5>
@@ -206,7 +239,7 @@
                                   <br/>
                                   Fone: <strong><a href="tel:1931146400">(19) 3114-6400</a></strong>
                                   <br/>
-                                  Email: <strong><a href="mailto:contato@rcrio.com">contato@rcrio.com</a></strong>
+                                  Email: <strong><a href="mailto:contato@r-crio.com">contato@r-crio.com</a></strong>
                                   <br/>
                                   Site: <strong><a href="http://www.rcrio.com" target="_blank">www.rcrio.com</a></strong>
                                 </p>
@@ -214,19 +247,14 @@
                             </tr>
                           </table>
                         </div>
-
                         <div class="clear"></div>
-
                       </td>
                     </tr>
                   </table><!-- /social & contact -->
-
                 </td>
               </tr>
             </table>
-          </div><!-- /content -->
-
-
+          </div>
         </td>
         <td></td>
       </tr>
@@ -237,8 +265,6 @@
       <tr>
         <td></td>
         <td class="container">
-
-            <!-- content -->
             <div class="content">
               <table>
                 <tr>
@@ -249,17 +275,17 @@
                     <p>
                       R-Crio
                       <br/>Rua Cumaru, 204 -  Alphaville Industrial
-                      <br/>Campinas,SP - CEP 13098-324
+                      <br/>Campinas, SP - CEP 13098-324
                     </p>
                   </td>
                 </tr>
               </table>
-            </div><!-- /content -->
+            </div>
 
         </td>
         <td></td>
       </tr>
-    </table><!-- /FOOTER -->
-
+    </table>
+    <!-- /FOOTER -->
   </body>
 </html>
