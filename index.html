@@ -1,326 +1,301 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <style type="text/css">
-      /* Geral */
-      * {margin:0;padding:0;}
-      * { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-      img {max-width: 100%;}
-      .collapse {margin:0;padding:0;}
-      body {-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;width: 100%!important;height: 100%;color: #414141;}
-
-      /* Tipografia */
-      a { color: #414141; text-decoration: none; }
-      a:hover { color: #75BA46; }
-      hr { margin: 30px 15px; border: 0; border-bottom: 1px solid #dfdfdf;}
-      h1,h2,h3 {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;}
-      h1 {font-weight:900; font-size: 19px; color:#fff; position: relative; float: right; top: 3rem;}
-      h2 { font-weight:600; font-size: 20px; color: #104566;}
-      h3 { font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 1.6rem; }
-      .collapse { margin:0!important;}
-      p, ul {margin-bottom: 10px;font-weight: normal;font-size:14px;line-height:1.5rem;}
-      ul li {margin-left:5px;list-style-position: inside;}
-      .call-to-action { font-weight: 600; color: #75BA46;}
-
-      /* Cabeçalho */
-      table.head-wrap { width: 100%; margin-bottom: 4rem; background-color: #104566;}
-      .header.container table td.logo { padding: 15px; }
-      .header.container table td.label { padding: 15px; padding-left:0px;}
-      table.body-wrap { width: 100%;}
-
-      /* Destaque */
-      .destaque { margin-top: 2rem !important; }
-      .destaque p { font-size:16px; }
-      .destaque p a { font-weight:bold; color: #75BA46; display: block; margin-top: .5rem;}
-      .destaque p a:hover { color: #414141;}
-
-      /* Artigos */
-      .artigos { width:100%; position:relative; margin-top: 2rem;}
-      .artigo { width:48%; display:inline; position:relative; text-align: left; margin-bottom: 3rem; height: 580px; overflow: hidden; }
-      .artigo--left { float: left; }
-      .artigo--right { float: right; }
-      .artigo .imagem { width: 250px; height: 250px; background-size: cover; background-position: 50% 50%; }
-      .artigo:hover p { color: #75BA46; }
-
-      /* Agenda */
-      .agenda {padding:35px 15px 15px;background-color:#f5f5f5;margin-bottom: 15px; margin-top: -10px;}
-      .agenda p {margin-bottom: 25px;}
-      .agenda-data {color: #777; font-weight: 500; margin-bottom:5px;}
-      .agenda-descricao {color: #75BA46; font-weight: 500; margin-bottom: 5px;}
-      .agenda-detalhes {color: #777; font-weight: 500; font-size: .8rem;}
-
-      /* Rodapé */
-      table.footer-wrap { width: 100%;  clear:both!important; background-color: #104566; color: #fff; }
-      .footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
-      .footer-wrap .container td.content p {font-size:10px;font-weight: bold;}
-      .social .soc-btn {padding: 5px 7px;font-size:12px;margin-bottom:10px;text-decoration:none;color: #FFF;font-weight:bold;display:block;text-align:center;}
-      a.fb { background-color: #3B5998!important; }
-      a.tw { background-color: #1daced!important; }
-      a.yt { background-color: #DB4A39!important; }
-      a.li { background-color: #1883BB!important; }
-
-
-
-
-
-
-
-      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-      .container {display:block!important;max-width:600px!important;margin:0 auto!important; /* makes it centered */clear:both!important;}
-
-      /* This should also be a block element, so that it will fill 100% of the .container */
-      .content {padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;}
-
-      /* Let's make sure tables in the content area are 100% wide */
-      .content table { width: 100%; }
-
-      /* Odds and ends */
-      .column {width: 300px;float:left;}
-      .column tr td { padding: 15px; }
-      .column-wrap {padding:0!important;margin:0 auto;max-width:600px!important;}
-      .column table { width:100%;}
-      .social .column {width: 280px;min-width: 279px;float:left;}
-
-      /* Be sure to place a .clear element after each set of columns, just to be safe */
-      .clear { display: block; clear: both; }
-
-      @media only screen and (max-width: 600px) {
-        h6 { font-size: 13px; }
-        div[class="column"] { width: auto!important; float:none!important;}
-        table.social div[class="column"] {width:auto!important;}
-        .footer-wrap img { width: 70%; }
-        .footer-wrap p { font-size: .75rem; }
-      }
-    </style>
-    <title>R-Crio News</title>
   </head>
 
-  <body>
+  <body style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; margin:0;padding:0; -webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;width: 100%!important;height: 100%;color: #414141;">
 
-    <!-- CABEÇALHO : início -->
-    <table class="head-wrap">
+    <table style="width: 100%; margin-bottom: 4rem; background-color: #104566;">
       <tr>
-        <td class="header container">
-          <div class="content">
-            <img src="http://assets.mktnaweb.com/accounts/2014/07/17/32646/pictures/40/original_logo.png?1442618972" style="position:absolute; top: 10px;" class="header--logo">
-            <h1 class="collapse">
-              <div>R-Crio News</div>
+        <td style="display:block!important;max-width:600px!important;margin:0 auto!important; clear:both!important;">
+          <div style="padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;">
+            <a style="text-decoration:none; color: #414141;" href="http://www.rcrio.com" target="_blank">
+              <img src="http://assets.mktnaweb.com/accounts/2014/07/17/32646/pictures/41/original_logo_footer.png?1442618979" style="margin-top:10px;" >
+            </a>
+            <h1 style="line-height: 22px; margin-bottom:15px;font-weight:900; color:#fff; position: relative; float: right; margin-top: 27px;">
+              <span style="font-size: 19px; display: block;">R-Crio News</span>
+              <span style="font-size: 14px; display: block;">Outubro 2015</span>
             </h1>
           </div>
         </td>
       </tr>
     </table>
-    <!-- CABEÇALHO : fim -->
 
 
-
-    <!-- CORPO : início -->
-    <table class="body-wrap">
+    <table style="width: 100%;">
       <tr>
         <td></td>
-        <td class="container">
+        <td style="display:block!important;max-width:600px!important;margin:0 auto!important;clear:both!important;">
 
-          <!-- 1. Artigo em Destaque -->
-          <div class="destaque content">
+          <!--==================
+          *
+          * 1. Artigo em destaque
+          *
+           ==================-->
+          <div style="padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;">
 
-            <!-- Link -->
-            <a href="https://www.facebook.com/rcriocriogenia">
-              <h2>
+            <h2 style="font-weight:600; font-size: 20px; line-height: 24px; margin-bottom:15px;">
+              <a href="https://www.facebook.com/rcriocriogenia" style="text-decoration:none;color: #104566;">
                 <!-- Título -->
                 25º Congresso Brasileiro de Odontopediatria
-              </h2>
-              <p>
+              </a>
+            </h2>
+            <p style="font-size:16px; margin-bottom: 10px;font-weight: normal;line-height:20px;">
+              <a href="https://www.facebook.com/rcriocriogenia" style="text-decoration:none;color: #414141">
                 <!-- Descrição -->
                 Estivemos presentes no 25º Congresso Brasileiro de Odontopediatria. Nosso fundador e presidente, doutor José Ricardo Muniz Ferreira, ministrou a palestra: "Dentes decíduos e permanentes como fonte de células-tronco mesenquimais: possibilidades e perspectivas".
-              </p>
-              <p class="call-to-action">
-                Leia mais »
-              </p>
+              </a>
+            </p>
+            <p style="font-size:16px;font-weight:600;margin-bottom: 10px;line-height:1.5rem;">
+              <a href="https://www.facebook.com/rcriocriogenia" style="text-decoration:none;color:#75BA46;">
+              Leia mais »
+            </p>
             </a>
           </div>
 
-          <hr>
+          <hr style="margin: 30px 15px; border: 0; border-bottom: 1px solid #dfdfdf;">
 
-          <!-- 2. Outros artigos -->
-          <div class="content">
-            <h2>
+
+          <!--==================
+          *
+          * 2. Outros artigos
+          *
+           ==================-->
+          <div style="padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;">
+            <h2 style="font-weight:600; font-size: 20px; color: #104566;line-height: 1.1; margin-bottom:15px;">
               Artigos mais acessados
             </h2>
-            <div class="artigos">
+            <div style="width:100%; position:relative; margin-top: 2rem;">
 
-              <!-- Artigo 1 -->
-              <div class="artigo artigo--left">
-                <!-- Link -->
-                <a href="http://migre.me/res9g">
-                  <!-- Imagem -->
-                  <div class="imagem" style="background-image: url(
-                    http://images.sciencedaily.com/2015/07/150702132721_1_540x360.jpg
-                  );">
+              <div style="display: block; width: 100%;">
+                <!-- Artigo 1 -->
+                <div style="width:48%; display:inline-block; position:relative; text-align: left; margin-bottom: 3rem; height: 580px; max-height: 580px; overflow: hidden; float: left;">
+                  <div style="width: 250px; height: 250px; overflow: hidden;">
+                    <a href="http://migre.me/res9g">
+                      <!-- Imagem -->
+                      <img src="http://placehold.it/250x250">
+                    </a>
                   </div>
-                  <h3>
-                    <!-- Título -->
-                    Pesquisas revelam diferenças entre células-tronco para o tratamento de degeneração da retina
+                  <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 20px;">
+                    <a href="http://migre.me/res9g" style="text-decoration:none;color: #104566;">
+                      <!-- Título -->
+                      Pesquisas revelam diferenças entre células-tronco para o tratamento de degeneração da retina
+                    </a>
                   </h3>
-                  <p>
-                    <!-- Descrição -->
-                    Células-tronco são a principal esperança para o tratamento de cegueiras e outras doenças oftalmológicas. Mas será que qualquer célula-tronco tem o mesmo potencial? Cientistas mostram que não: a fonte das células-tronco faz toda a diferença para o resultado da terapia.
+                  <p style="margin-bottom: 10px;font-weight: normal;line-height:18px; font-size: 14px;">
+                    <a href="http://migre.me/res9g" style="text-decoration:none;color: #414141;">
+                      <!-- Descrição -->
+                      Células-tronco são a principal esperança para o tratamento de cegueiras e outras doenças oftalmológicas. Mas será que qualquer célula-tronco tem o mesmo potencial? Cientistas mostram que não: a fonte das células-tronco faz toda a diferença para o resultado da terapia.
+                    </a>
                   </p>
-                  <p class="call-to-action">
-                    Leia mais »
+                  <p style="font-weight: 600;">
+                    <a href="http://migre.me/res9g" style="text-decoration:none;color: #75BA46;">
+                      Leia mais »
+                    </a>
                   </p>
-                </a>
+                </div>
+
+                <!-- Artigo 2 -->
+                <div style="width:48%; display:inline-block; position:relative; text-align: left; margin-bottom: 3rem; height: 580px; max-height: 580px; overflow: hidden; float: right;">
+                  <div style="width: 250px; height: 250px; overflow: hidden;">
+                    <a href="http://migre.me/res5B">
+                      <!-- Imagem -->
+                      <img src="http://placehold.it/250x250">
+                    </a>
+                  </div>
+                  <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 20px;">
+                    <a href="http://migre.me/res5B" style="text-decoration:none;color: #104566;">
+                      <!-- Título -->
+                      Excesso de antioxidantes pode prejudicar a pele durante a juventude
+                    </a>
+                  </h3>
+                  <p style="margin-bottom: 10px;font-weight: normal;line-height:18px; font-size: 14px;">
+                    <a href="http://migre.me/res5B" style="text-decoration:none;color: #414141;">
+                      <!-- Descrição -->
+                      Radicais livres são importantes para a saúde e antioxidantes em excesso podem ser prejudiciais. É o que mostra um estudo surpreendente que comparou o efeito de antioxidantes sobre as células-tronco de animais jovens e idosos.
+                    </a>
+                  </p>
+                  <p style="font-weight: 600;">
+                    <a href="http://migre.me/res5B" style="text-decoration:none;color: #75BA46;">
+                      Leia mais »
+                    </a>
+                  </p>
+                </div>
               </div>
 
-              <!-- Artigo 2 -->
-              <div class="artigo artigo--right">
-                <!-- Link -->
-                <a href="http://migre.me/res5B">
-                  <!-- Imagem -->
-                  <div class="imagem" style="background-image: url(
-                    http://ep01.epimg.net/elpais/imagenes/2015/08/03/ciencia/1438626700_010061_1438628445_noticia_normal.jpg
-                  );">
+              <div style="display: block; width: 100%;">
+                <!-- Artigo 3 -->
+                <div style="width:48%; display:inline-block; position:relative; text-align: left; margin-bottom: 3rem; height: 580px; max-height: 580px; overflow: hidden; float: left;">
+                  <div style="width: 250px; height: 250px; overflow: hidden;">
+                    <a href="http://migre.me/r7L0O">
+                      <!-- Imagem -->
+                      <img src="http://placehold.it/250x250">
+                    </a>
                   </div>
-                  <h3>
-                    <!-- Título -->
-                    Excesso de antioxidantes pode prejudicar a pele durante a juventude
+                  <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 20px;">
+                    <a href="http://migre.me/r7L0O" style="text-decoration:none;color: #104566;">
+                      <!-- Título -->
+                      Excesso de antioxidantes pode prejudicar a pele durante a juventude
+                    </a>
                   </h3>
-                  <p>
-                    <!-- Descrição -->
-                    Radicais livres são importantes para a saúde e antioxidantes em excesso podem ser prejudiciais. É o que mostra um estudo surpreendente que comparou o efeito de antioxidantes sobre as células-tronco de animais jovens e idosos.
+                  <p style="margin-bottom: 10px;font-weight: normal;line-height:18px; font-size: 14px;">
+                    <a href="http://migre.me/r7L0O" style="text-decoration:none;color: #414141;">
+                      <!-- Descrição -->
+                      Células-tronco de pessoas idosas também são idosas – e são rebeldes: resistem a todas as tentativas dos cientistas de "rejuvenescê-las". A proteína-chave para essa resistência pode ter sido descoberta, e promete ajudar a combater todas as doenças relacionadas com o envelhecimento.
+                    </a>
                   </p>
-                  <p class="call-to-action">
-                    Leia mais »
+                  <p style="font-weight: 600;">
+                    <a href="http://migre.me/r7L0O" style="text-decoration:none;color: #75BA46;">
+                      Leia mais »
+                    </a>
                   </p>
-                </a>
+                </div>
+
+
+                <!-- Artigo 4 -->
+                <div style="width:48%; display:inline-block; position:relative; text-align: left; margin-bottom: 3rem; height: 580px; max-height: 580px; overflow: hidden; float: right;">
+                  <div style="width: 250px; height: 250px; overflow: hidden;">
+                    <a href="http://migre.me/qXTln">
+                      <!-- Imagem -->
+                      <img src="http://placehold.it/250x250">
+                    </a>
+                  </div>
+                  <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 20px;">
+                    <a href="http://migre.me/qXTln" style="text-decoration:none;color: #104566;">
+                      <!-- Título -->
+                      Novas pesquisas impulsionam busca de cientistas pela cura da Aids
+                    </a>
+                  </h3>
+                  <p style="margin-bottom: 10px;font-weight: normal;line-height:18px; font-size: 14px;">
+                    <a href="http://migre.me/qXTln" style="text-decoration:none;color: #414141;">
+                      <!-- Descrição -->
+                      O vírus do HIV invade justamente as células que deveriam atacá-lo: nossas células imunes. Cientistas agora sabem como “editar” as células de defesa de primatas para bloquear a entrada do vírus.
+                    </a>
+                  </p>
+                  <p style="font-weight: 600;">
+                    <a href="http://migre.me/qXTln" style="text-decoration:none;color: #75BA46;">
+                      Leia mais »
+                    </a>
+                  </p>
+                </div>
               </div>
 
-              <!-- Artigo 3 -->
-              <div class="artigo artigo--left">
-                <!-- Link -->
-                <a href="http://migre.me/r7L0O">
-                  <!-- Imagem -->
-                  <div class="imagem" style="background-image: url(
-                    http://ep01.epimg.net/elpais/imagenes/2015/07/27/ciencia/1438018999_131119_1438021007_noticia_normal.jpg
-                  );">
-                  </div>
-                  <h3>
-                    <!-- Título -->
-                    Excesso de antioxidantes pode prejudicar a pele durante a juventude
-                  </h3>
-                  <p>
-                    <!-- Descrição -->
-                    Células-tronco de pessoas idosas também são idosas – e são rebeldes: resistem a todas as tentativas dos cientistas de "rejuvenescê-las". A proteína-chave para essa resistência pode ter sido descoberta, e promete ajudar a combater todas as doenças relacionadas com o envelhecimento.
-                  </p>
-                  <p class="call-to-action">
-                    Leia mais »
-                  </p>
-                </a>
-              </div>
-
-              <!-- Artigo 4 -->
-              <div class="artigo artigo--right">
-                <!-- Link -->
-                <a href="http://migre.me/qXTln">
-                  <!-- Imagem -->
-                  <div class="imagem" style="background-image: url(
-                    http://info.abril.com.br/images/materias/2015/07/885x592-aids-20150723112506.jpg
-                  );">
-                  </div>
-                  <h3>
-                    <!-- Título -->
-                    Novas pesquisas impulsionam busca de cientistas pela cura da Aids
-                  </h3>
-                  <p>
-                    <!-- Descrição -->
-                    O vírus do HIV invade justamente as células que deveriam atacá-lo: nossas células imunes. Cientistas agora sabem como “editar” as células de defesa de primatas para bloquear a entrada do vírus.
-                  </p>
-                  <p class="call-to-action">
-                    Leia mais »
-                  </p>
-                </a>
-              </div>
             </div>
           </div>
 
-          <div class="content">
-            <table>
+
+          <!--==================
+          *
+          * 3. Agenda de eventos
+          *
+           ==================-->
+          <div style="padding:15px;max-width:700px; margin:20px auto 0;display:block;min-height: 5rem;">
+            <table style="width: 100%;">
               <tr>
                 <td>
-                  <!-- Agenda Panel :begin -->
-                  <div class="agenda">
-                    <h2>Agenda do Mês</h2>
-                    <p>
-                      <div class="agenda-data">10/out</div>
-                      <a href="#">
-                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
-                      </a>
-                    </p>
-                    <p>
-                      <div class="agenda-data">15/out</div>
-                      <a href="#">
-                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
-                      </a>
-                    </p>
-                    <p>
-                      <div class="agenda-data">27/out</div>
-                      <a href="#">
-                        <div class="agenda-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                        <div class="agenda-detalhes">Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local</div>
-                      </a>
-                    </p>
+                  <div style="padding:22px 15px 15px;background-color:#f5f5f5;margin-bottom: 15px; margin-top: -10px; font-size: 16px;">
+                    <h2 style="font-weight:600; font-size: 20px; color: #104566;line-height: 1.1;margin-bottom: 2rem;">Agenda do Mês</h2>
+
+                    <!-- Evento 1 -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="color: #75BA46; font-weight: 500; margin-bottom:5px;">
+                        10 de outubro
+                      </div>
+                      <div style="font-weight: 500; margin-bottom: 5px;">
+                        <a href="#" style=" text-decoration:none; color: #104566;">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </a>
+                      </div>
+                      <div style="font-weight: 500; font-size: .8rem;">
+                        <a href="#" style=" text-decoration:none; color: #777;">
+                          Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Evento 2 -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="color: #75BA46; font-weight: 500; margin-bottom:5px;">
+                        19 de outubro
+                      </div>
+                      <div style="font-weight: 500; margin-bottom: 5px;">
+                        <a href="#" style=" text-decoration:none; color: #104566;">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </a>
+                      </div>
+                      <div style="font-weight: 500; font-size: .8rem;">
+                        <a href="#" style=" text-decoration:none; color: #777;">
+                          Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="color: #75BA46; font-weight: 500; margin-bottom:5px;">
+                        30 de outubro
+                      </div>
+                      <div style="font-weight: 500; margin-bottom: 5px;">
+                        <a href="#" style=" text-decoration:none; color: #104566;">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </a>
+                      </div>
+                      <div style="font-weight: 500; font-size: .8rem;">
+                        <a href="#" style=" text-decoration:none; color: #777;">
+                          Centro de Exposições LoremIpsum - a partir das 10h - estacionamento no local
+                        </a>
+                      </div>
+                    </div>
+
                   </div>
-                  <!-- Agenda Panel : end -->
                 </td>
               </tr>
             </table>
           </div>
 
 
-          <div class="content">
-            <table>
+          <div style="padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;">
+            <table style="width: 100%;">
               <tr>
                 <td>
                   <!-- social & contact -->
-                  <table class="social" width="100%">
+                  <table style="width: 100%;">
                     <tr>
                       <td>
-                        <div class="column">
-                          <table cellpadding="" align="left">
+                        <div style="display: inline; width: 280px;min-width: 279px;float: left;">
+                          <table style="text-align: left;">
                             <tr>
                               <td>
-                                <h3>Curta, siga, compartilhe</h3>
-                                <p class="">
-                                  <a href="https://www.facebook.com/rcriocriogenia" class="soc-btn fb" target="_blank">Facebook</a>
-                                  <a href="https://www.youtube.com/channel/UCjgvk9zu46Jlvk23c7nLfFA" class="soc-btn yt" target="_blank">Youtube</a>
+                                <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46; line-height: 1.6rem;">Curta, siga, compartilhe</h3>
+                                <p>
+                                  <a href="https://www.facebook.com/rcriocriogenia" style="padding: 5px 7px;font-size:12px;margin-bottom:10px;text-decoration:none;color: #FFF;font-weight:bold;display:block;text-align:center; background-color: #3B5998!important;" target="_blank">Facebook</a>
+                                  <a href="https://www.youtube.com/channel/UCjgvk9zu46Jlvk23c7nLfFA" style="padding: 5px 7px;font-size:12px;margin-bottom:10px;text-decoration:none;color: #FFF;font-weight:bold;display:block;text-align:center; background-color: #DB4A39!important;" target="_blank">Youtube</a>
                                 </p>
                               </td>
                             </tr>
                           </table>
                         </div>
-                        <div class="column">
-                          <table style="text-align: right;">
+                        <div style="display: inline; width: 280px; min-width: 279px;">
+                          <table style="text-align:right;">
                             <tr>
                               <td>
-                                <h3 class="">Fale com a R-Crio</h3>
-                                <p>
+                                <h3 style="line-height: 1.1; margin-bottom:15px;font-weight:600; font-size: 16px; padding-top: 1rem; color: #75BA46;">Fale com a R-Crio</h3>
+                                <p style="margin-bottom: 10px;font-weight: normal;line-height:20px; font-size: 14px;">
                                   Segunda à Sexta: 8:00h às 17:30h
                                   <br/>
-                                  Fone: <strong><a href="tel:1931146400">(19) 3114-6400</a></strong>
+                                  Fone: <strong><a style="text-decoration:none; color: #414141;" href="tel:1931146400">(19) 3114-6400</a></strong>
                                   <br/>
-                                  Email: <strong><a href="mailto:contato@r-crio.com">contato@r-crio.com</a></strong>
+                                  Email: <strong><a style="text-decoration:none; color: #414141;" href="mailto:contato@r-crio.com">contato@r-crio.com</a></strong>
                                   <br/>
-                                  Site: <strong><a href="http://www.rcrio.com" target="_blank">www.rcrio.com</a></strong>
+                                  Site: <strong><a style="text-decoration:none; color: #414141;" href="http://www.rcrio.com" target="_blank">www.rcrio.com</a></strong>
                                 </p>
                               </td>
                             </tr>
                           </table>
                         </div>
-                        <div class="clear"></div>
+                        <div style="display: block; clear: both;"></div>
                       </td>
                     </tr>
                   </table><!-- /social & contact -->
@@ -335,26 +310,28 @@
     <!-- CORPO : fim -->
 
     <!-- FOOTER -->
-    <table class="footer-wrap">
+    <table style="width: 100%;  clear:both!important; background-color: #104566; color: #fff;">
       <tr>
         <td></td>
-        <td class="container">
-            <div class="content">
-              <table>
-                <tr>
-                  <td align="left">
+        <td style="display:block!important;max-width:600px!important;margin:0 auto!important;clear:both!important;">
+          <div style="padding:15px;max-width:700px;margin:0 auto;display:block;min-height: 5rem;">
+            <table style="width: 100%;">
+              <tr>
+                <td style="text-align: left;">
+                  <a style="text-decoration:none; color: #414141;" href="http://www.rcrio.com" target="_blank">
                     <img src="http://assets.mktnaweb.com/accounts/2014/07/17/32646/pictures/41/original_logo_footer.png?1442618979">
-                  </td>
-                  <td align="right">
-                    <p>
-                      R-Crio
-                      <br/>Rua Cumaru, 204 -  Alphaville Industrial
-                      <br/>Campinas, SP - CEP 13098-324
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+                  </a>
+                </td>
+                <td style="text-align: right;">
+                  <p style="padding-top:15px; font-size: 14px; line-height: 20px;">
+                    <strong>R-Crio</strong>
+                    <br/>Rua Cumaru, 204 -  Alphaville Industrial
+                    <br/>Campinas, SP - CEP 13098-324
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
 
         </td>
         <td></td>
